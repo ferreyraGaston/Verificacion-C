@@ -1,0 +1,11 @@
+C:\Users\ferre\source\repos\Solucion\ActivParcial2\bin\Debug\ActivParcial2.exe.config
+C:\Users\ferre\source\repos\Solucion\ActivParcial2\bin\Debug\ActivParcial2.exe
+C:\Users\ferre\source\repos\Solucion\ActivParcial2\bin\Debug\ActivParcial2.pdb
+C:\Users\ferre\source\repos\Solucion\ActivParcial2\obj\Debug\ActivParcial2.csproj.AssemblyReference.cache
+C:\Users\ferre\source\repos\Solucion\ActivParcial2\obj\Debug\ActivParcial2.csproj.SuggestedBindingRedirects.cache
+C:\Users\ferre\source\repos\Solucion\ActivParcial2\obj\Debug\ActivParcial2.Form1.resources
+C:\Users\ferre\source\repos\Solucion\ActivParcial2\obj\Debug\ActivParcial2.Properties.Resources.resources
+C:\Users\ferre\source\repos\Solucion\ActivParcial2\obj\Debug\ActivParcial2.csproj.GenerateResource.cache
+C:\Users\ferre\source\repos\Solucion\ActivParcial2\obj\Debug\ActivParcial2.csproj.CoreCompileInputs.cache
+C:\Users\ferre\source\repos\Solucion\ActivParcial2\obj\Debug\ActivParcial2.exe
+C:\Users\ferre\source\repos\Solucion\ActivParcial2\obj\Debug\ActivParcial2.pdb
