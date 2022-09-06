@@ -39,6 +39,7 @@
             this.TextDni = new System.Windows.Forms.TextBox();
             this.TextFecha = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.Lbn_Resultado = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,7 +85,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 53);
             this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
+            this.button1.Text = "Btn_Persona";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -94,8 +95,9 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(98, 53);
             this.button2.TabIndex = 5;
-            this.button2.Text = "button2";
+            this.button2.Text = "Btn_Edad";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // TextNombre
             // 
@@ -124,11 +126,21 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // Lbn_Resultado
+            // 
+            this.Lbn_Resultado.AutoSize = true;
+            this.Lbn_Resultado.Location = new System.Drawing.Point(201, 222);
+            this.Lbn_Resultado.Name = "Lbn_Resultado";
+            this.Lbn_Resultado.Size = new System.Drawing.Size(37, 13);
+            this.Lbn_Resultado.TabIndex = 9;
+            this.Lbn_Resultado.Text = "..........";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 301);
+            this.Controls.Add(this.Lbn_Resultado);
             this.Controls.Add(this.TextFecha);
             this.Controls.Add(this.TextDni);
             this.Controls.Add(this.TextNombre);
@@ -159,6 +171,7 @@
         private System.Windows.Forms.TextBox TextDni;
         private System.Windows.Forms.TextBox TextFecha;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label Lbn_Resultado;
     }
 }
 

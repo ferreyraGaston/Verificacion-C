@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace ActivParcial2
 {
@@ -27,13 +29,16 @@ namespace ActivParcial2
             BorrarError();
             if(ValidarCampos())
             {
-                MessageBox.Show("datos ok");
+                Persona persona = new Persona();
+
+                persona.p_nombre = TextNombre.Text;
+                persona.p_dni = long.Parse(TextDni.Text);
+                DateTime fecha = Convert.ToDateTime(TextFecha.Text);
+
+                MessageBox.Show("Nombre: "+ persona.p_nombre + ", Dni: " + persona.p_dni + ", Fecha: " + fecha);
             }
 
-            //Persona persona = new Persona();
-            //persona.dni = int.Parse(Console.ReadLine());
-            //persona.nombre = Console.ReadLine();
-            //persona.fechaNacimiento = Convert.ToDateTime(Console.ReadLine());
+            
         }
 
         private bool ValidarCampos()
@@ -99,6 +104,25 @@ namespace ActivParcial2
             else
             {
                 errorProvider1.SetError(TextFecha, "");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {      
+            BorrarError();
+            if (ValidarCampos())
+            {
+                DateTime fechaActual = DateTime.Today;
+                string fecha_llegada = TextFecha.Text;
+                DateTime dtp_fecha = Convert.ToDateTime(fecha_llegada);
+
+                int edad = fechaActual.Year - dtp_fecha.Year; //diferencia en años
+                if (fechaActual < dtp_fecha.AddYears(edad))
+                {
+                    edad--;
+                }
+                Persona DatoPersona = new Persona(edad);
+                Lbn_Resultado.Text = DatoPersona.CalcularEdad();
             }
         }
     }
